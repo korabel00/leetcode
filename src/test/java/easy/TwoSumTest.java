@@ -20,7 +20,7 @@ public class TwoSumTest {
         long start = System.nanoTime();
         int[] actualValue = twoSum.findTwoSumByBruteForce(new int[]{2,7,11,15}, 9);
         long stop = System.nanoTime();
-        System.out.printf("%,d %n", stop - start);
+        System.out.printf("brute force: %,d %n", stop - start);
         Assert.assertEquals(actualValue, new int[]{0,1}, "Wrong answer");
     }
 
@@ -30,7 +30,7 @@ public class TwoSumTest {
         long start = System.nanoTime();
         int[] actualValue = twoSum.findTwoSumByMap(new int[]{3,2,4}, 6);
         long stop = System.nanoTime();
-        System.out.printf("%,d %n", stop - start);
+        System.out.printf("map: %,d %n", stop - start);
         Assert.assertEquals(actualValue, new int[]{1,2}, "Wrong answer");
     }
 
