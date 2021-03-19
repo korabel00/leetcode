@@ -1,10 +1,10 @@
-package easy;
-
+package easy.two_sum;
 import java.util.HashMap;
 import java.util.Map;
 
 public class TwoSum {
 
+    //Runtime - O(N * N), Space - O(1)
     public int[] findTwoSumByBruteForce(int[] nums, int target) {
 
         for (int i = 0; i < nums.length - 1; i++) {
@@ -20,6 +20,7 @@ public class TwoSum {
         throw new IllegalArgumentException("No two sum solution");
     }
 
+    //Runtime - O(N + M), Space - O(N)
     public int[] findTwoSumByMap(int[] nums, int target) {
 
         Map<Integer, Integer> integerMap = new HashMap<>();
