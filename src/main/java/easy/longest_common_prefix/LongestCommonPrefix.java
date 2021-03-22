@@ -2,8 +2,6 @@ package easy.longest_common_prefix;
 
 //Amazon
 //Time Complexity: O(N + M) Space Complexity: O(1)
-
-
 public class LongestCommonPrefix {
 
     /**
