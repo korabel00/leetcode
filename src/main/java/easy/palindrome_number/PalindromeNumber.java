@@ -16,7 +16,6 @@ public class PalindromeNumber {
             x = x / 10;
             result = result*10 + pop;
         }
-
         return result == initial;
     }
 }
