@@ -20,7 +20,7 @@ public class ValidParentheses {
                 stack.pop();
             } else if (ch == '}' && !stack.isEmpty() && stack.peek() == '{') {
                 stack.pop();
-            }
+            } else return false;
        }
         return stack.isEmpty();
     }

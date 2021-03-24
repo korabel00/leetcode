@@ -80,4 +80,12 @@ public class ValidParenthesesTest {
         boolean actualResult = validParentheses.isValid("{[]}");
         Assert.assertTrue(actualResult);
     }
+
+    @Test
+    public void testIsValidSix() {
+
+        ValidParentheses validParentheses = new ValidParentheses();
+        boolean actualResult = validParentheses.isValid("([}}])");
+        Assert.assertFalse(actualResult);
+    }
 }
