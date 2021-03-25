@@ -3,6 +3,7 @@ package easy.valid_parantheses;
 import java.util.Stack;
 
 //Facebook
+// Time O(n) Space O(n)
 public class ValidParentheses {
 
     public boolean isValid(String s) {
