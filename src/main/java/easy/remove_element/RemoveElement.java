@@ -1,5 +1,7 @@
 package easy.remove_element;
 
+//Amazon
+// Time O(n) Space O(1)
 public class RemoveElement {
     public int removeElement(int[] nums, int val) {
 
