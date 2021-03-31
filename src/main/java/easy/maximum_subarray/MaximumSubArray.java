@@ -31,10 +31,12 @@ package easy.maximum_subarray;
 //Amazon
 //Microsoft
 //LinkedIn
+
 //Kadene's Algorithm
+//Time O(N) Space O(1)
 public class MaximumSubArray {
 
-    public int maxSubArray(int[] nums) {
+    public int maxSubArrayKadenes(int[] nums) {
 
         int max_sum = nums[0];
         int current_sum = max_sum;
@@ -45,8 +47,10 @@ public class MaximumSubArray {
         }
         return max_sum;
     }
-}
+
 //  |   nums[i]         |   -2  |   3   |   2   |   -1  |
 //  | current + nums[i] |   0   |   1   |   5   |   4   |
 //  |   current         |   -2  |   3   |   5   |   4   |
 //  |   max             |   -2  |   3   |   5   |   5   |
+
+}

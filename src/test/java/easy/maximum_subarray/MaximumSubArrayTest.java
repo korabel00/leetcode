@@ -36,7 +36,7 @@ public class MaximumSubArrayTest {
     @Test
     public void testMaxSubArrayZero() {
         MaximumSubArray maximumSubArray = new MaximumSubArray();
-        int actual = maximumSubArray.maxSubArray(new int[]{-2,3,2,-1});
+        int actual = maximumSubArray.maxSubArrayKadenes(new int[]{-2,3,2,-1});
         int expected = 5;
         Assert.assertEquals(actual, expected);
     }
@@ -44,7 +44,7 @@ public class MaximumSubArrayTest {
     @Test
     public void testMaxSubArray() {
         MaximumSubArray maximumSubArray = new MaximumSubArray();
-        int actual = maximumSubArray.maxSubArray(new int[]{-2,1,-3,4,-1,2,1,-5,4});
+        int actual = maximumSubArray.maxSubArrayKadenes(new int[]{-2,1,-3,4,-1,2,1,-5,4});
         int expected = 6; // Explanation: [4,-1,2,1] has the largest sum = 6.
         Assert.assertEquals(actual, expected);
     }
@@ -52,7 +52,7 @@ public class MaximumSubArrayTest {
     @Test
     public void testMaxSubArrayTwo() {
         MaximumSubArray maximumSubArray = new MaximumSubArray();
-        int actual = maximumSubArray.maxSubArray(new int[]{1});
+        int actual = maximumSubArray.maxSubArrayKadenes(new int[]{1});
         int expected = 1;
         Assert.assertEquals(actual, expected);
     }
@@ -60,7 +60,7 @@ public class MaximumSubArrayTest {
     @Test
     public void testMaxSubArrayThree() {
         MaximumSubArray maximumSubArray = new MaximumSubArray();
-        int actual = maximumSubArray.maxSubArray(new int[]{5,4,-1,7,8});
+        int actual = maximumSubArray.maxSubArrayKadenes(new int[]{5,4,-1,7,8});
         int expected = 23;
         Assert.assertEquals(actual, expected);
     }
