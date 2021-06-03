@@ -1,4 +1,5 @@
-package easy.two_sum;
+package arrays.easy;
+import arrays.easy.TwoSum;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;

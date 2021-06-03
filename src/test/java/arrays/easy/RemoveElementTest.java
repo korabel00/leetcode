@@ -1,9 +1,8 @@
-package easy.remove_element;
+package arrays.easy;
 
+import arrays.easy.RemoveElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import static org.testng.Assert.*;
 
 /**
  * Given an array nums and a value val, remove all instances of that value in-place and return the new length.

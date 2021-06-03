@@ -1,4 +1,4 @@
-package easy.remove_element;
+package arrays.easy;
 
 //Amazon
 // Time O(n) Space O(1)

@@ -1,5 +1,6 @@
-package easy.search_insert_position;
+package arrays.easy;
 
+import arrays.easy.SearchInsertPosition;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

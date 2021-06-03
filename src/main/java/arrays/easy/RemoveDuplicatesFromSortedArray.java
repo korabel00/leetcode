@@ -1,4 +1,4 @@
-package easy.remove_duplicates_from_sorted_array;
+package arrays.easy;
 
 //Facebook
 //Google

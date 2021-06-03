@@ -1,4 +1,4 @@
-package easy.search_insert_position;
+package arrays.easy;
 
 /**
  * Given a sorted array of distinct integers and a target value, return the index if the target is found.

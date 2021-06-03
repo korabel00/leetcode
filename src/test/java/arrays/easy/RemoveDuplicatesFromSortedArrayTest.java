@@ -1,9 +1,8 @@
-package easy.remove_duplicates_from_sorted_array;
+package arrays.easy;
 
+import arrays.easy.RemoveDuplicatesFromSortedArray;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import static org.testng.Assert.*;
 
 /**
  * Given a sorted array nums, remove the duplicates in-place such that each element appears only once and returns the new length.

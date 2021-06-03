@@ -1,5 +1,6 @@
-package arrays;
+package arrays.easy;
 
+import arrays.easy.MaxConsecutiveOnes;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

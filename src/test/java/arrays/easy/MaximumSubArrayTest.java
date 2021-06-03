@@ -1,5 +1,6 @@
-package easy.maximum_subarray;
+package arrays.easy;
 
+import arrays.easy.MaximumSubArray;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
