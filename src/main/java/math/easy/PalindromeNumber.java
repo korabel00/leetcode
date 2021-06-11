@@ -1,4 +1,4 @@
-package easy.palindrome_number;
+package math.easy;
 
 //Time Complexity: O(N) Space Complexity: O(1)
 public class PalindromeNumber {

@@ -1,5 +1,6 @@
-package easy.palindrome_number;
+package math.easy;
 
+import math.easy.PalindromeNumber;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

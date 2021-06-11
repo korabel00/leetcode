@@ -1,8 +1,10 @@
-package easy.merge_two_sorted_lists;
+package recursion.easy.merge_two_sorted_lists;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import recursion.easy.merge_two_sorted_lists.ListNode;
+import recursion.easy.merge_two_sorted_lists.MergeSortedLists;
 
 /**
  * Write a SortedMerge() function that takes two lists, each of which is sorted in increasing order, and merges the two

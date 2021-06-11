@@ -1,9 +1,8 @@
-package easy.implement_strStr;
+package strings.easy;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import static org.testng.Assert.*;
+import strings.easy.ImplementStrStr;
 
 /**
  * Implement strStr().

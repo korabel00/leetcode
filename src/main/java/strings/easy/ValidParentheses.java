@@ -1,4 +1,4 @@
-package easy.valid_parantheses;
+package strings.easy;
 
 import java.util.Stack;
 

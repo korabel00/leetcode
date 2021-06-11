@@ -1,5 +1,6 @@
-package easy.reverse_integer;
+package math.easy;
 
+import math.easy.ReverseInteger;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;

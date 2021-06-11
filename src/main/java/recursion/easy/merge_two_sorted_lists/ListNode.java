@@ -1,4 +1,4 @@
-package easy.merge_two_sorted_lists;
+package recursion.easy.merge_two_sorted_lists;
 
 public class ListNode {
 

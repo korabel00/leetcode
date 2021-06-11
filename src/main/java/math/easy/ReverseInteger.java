@@ -1,4 +1,4 @@
-package easy.reverse_integer;
+package math.easy;
 
 //Google
 //Time Complexity: O(log(x)) Space Complexity: O(1)

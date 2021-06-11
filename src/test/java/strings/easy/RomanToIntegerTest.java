@@ -1,7 +1,8 @@
-package easy.roman_to_integer;
+package strings.easy;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import strings.easy.RomanToInteger;
 
 /**
  * Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.

@@ -1,4 +1,4 @@
-package easy.longest_common_prefix;
+package strings.easy;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;

@@ -1,4 +1,4 @@
-package easy.longest_common_prefix;
+package strings.easy;
 
 //Amazon
 //Time Complexity: O(N + M) Space Complexity: O(1)

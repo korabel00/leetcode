@@ -1,4 +1,4 @@
-package easy.implement_strStr;
+package strings.easy;
 
 /**
  * Implement strStr().
@@ -31,6 +31,7 @@ package easy.implement_strStr;
  * haystack and needle consist of only lower-case English characters.
  */
 
+// Two pointers
 // Time O(n+m) Space O(1)
 public class ImplementStrStr {
 
