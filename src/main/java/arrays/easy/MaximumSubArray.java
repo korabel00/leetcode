@@ -38,14 +38,14 @@ public class MaximumSubArray {
 
     public int maxSubArrayKadenes(int[] nums) {
 
-        int max_sum = nums[0];
-        int current_sum = max_sum;
+        int maxSum = nums[0];
+        int currentSum = maxSum;
 
         for (int i = 1; i < nums.length; i++) {
-            current_sum = Math.max(nums[i], current_sum + nums[i]);
-            if (current_sum > max_sum) max_sum = current_sum; // or max_sum = Math.max(current_sum, max_sum);
+            currentSum = Math.max(nums[i], currentSum + nums[i]);
+            if (currentSum > maxSum) maxSum = currentSum; // or maxSum = Math.max(currentSum, maxSum);
         }
-        return max_sum;
+        return maxSum;
     }
 
 //  |   nums[i]         |   -2  |   3   |   2   |   -1  |
