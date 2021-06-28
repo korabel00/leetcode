@@ -63,35 +63,35 @@ public class SquaresOfASortedArray {
             return squaredSortedNums;
         }
 
-        int positive_pointer = 0;
+        int positivePointer = 0;
         //set up pointer to the first positive element position
-        while (positive_pointer < nums.length && nums[positive_pointer] < 0)   {
-            positive_pointer++;
+        while (positivePointer < nums.length && nums[positivePointer] < 0)   {
+            positivePointer++;
         }
         //set up another pointer to the first last negative element position
-        int negative_pointer = positive_pointer - 1;
+        int negativePointer = positivePointer - 1;
         int i = 0;
 
-        while (negative_pointer >= 0 && positive_pointer < nums.length) {
-            if (nums[negative_pointer]*nums[negative_pointer] < nums[positive_pointer]*nums[positive_pointer]) {
-                squaredSortedNums[i] = nums[negative_pointer]*nums[negative_pointer];
-                negative_pointer--;
+        while (negativePointer >= 0 && positivePointer < nums.length) {
+            if (nums[negativePointer]*nums[negativePointer] < nums[positivePointer]*nums[positivePointer]) {
+                squaredSortedNums[i] = nums[negativePointer]*nums[negativePointer];
+                negativePointer--;
             } else {
-                squaredSortedNums[i] = nums[positive_pointer]*nums[positive_pointer];
-                positive_pointer++;
+                squaredSortedNums[i] = nums[positivePointer]*nums[positivePointer];
+                positivePointer++;
             }
             i++;
         }
         // we have reached the end of an array in one case above, so copy the rest
-        while (negative_pointer >= 0) {
-            squaredSortedNums[i] = nums[negative_pointer]*nums[negative_pointer];
-            negative_pointer--;
+        while (negativePointer >= 0) {
+            squaredSortedNums[i] = nums[negativePointer]*nums[negativePointer];
+            negativePointer--;
             i++;
         }
 
-        while (positive_pointer < nums.length) {
-            squaredSortedNums[i] = nums[positive_pointer]*nums[positive_pointer];
-            positive_pointer++;
+        while (positivePointer < nums.length) {
+            squaredSortedNums[i] = nums[positivePointer]*nums[positivePointer];
+            positivePointer++;
             i++;
         }
 
