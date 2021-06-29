@@ -43,9 +43,10 @@ import java.util.Arrays;
  * 1 <= heights[i] <= 100
  */
 
+//Time O(N) Space O(N)
 public class HeightChecker {
 
-    public static int heightChecker(int[] heights) {
+    public static int calculateHeightChecker(int[] heights) {
 
         int[] expected = heights.clone();
         int counter = 0;
