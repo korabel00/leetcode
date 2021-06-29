@@ -20,7 +20,7 @@ package arrays.easy;
  * 0 <= nums[i] <= 5000
  */
 
-// Time O(N) Space O(1
+// Time O(N) Space O(1)
 public class SortArrayByParity {
 
     public int[] sortArrayByParitySimple(int[] nums) {
