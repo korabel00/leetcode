@@ -42,9 +42,8 @@ package arrays.easy;
  * nums is sorted in ascending order.
  */
 
-//Facebook
-//Google
-//Microsoft
+//Facebook Google Microsoft
+// Time O(N) Space O(1)
 public class RemoveDuplicatesFromSortedArray {
 
     public int removeDuplicates(int[] nums) {
