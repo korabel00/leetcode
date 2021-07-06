@@ -43,6 +43,7 @@ public class ThirdMaximumNumber {
 
         Set<Integer> set = new HashSet<>();
 
+        // if several numbers are equal they won't be added to set
         for (int num : nums) {
             set.add(num);
         }
