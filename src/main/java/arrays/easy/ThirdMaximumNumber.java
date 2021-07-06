@@ -43,6 +43,7 @@ public class ThirdMaximumNumber {
 
         for (int i = 0; i < nums.length; i++) {
 
+            // in case numbers have the same value
             if (nums[i] == firstMax || nums[i] == secondMax || nums[i] == thirdMax) {
                 continue;
             }
