@@ -28,4 +28,20 @@ public class ThirdMaximumNumberTest {
         int actual = thirdMaximumNumber.findThirdMax(arrayUnderTest);
         Assert.assertEquals(1, actual);
     }
+
+    @Test
+    public void testThirdMaximumNumberCaseFour() {
+        ThirdMaximumNumber thirdMaximumNumber = new ThirdMaximumNumber();
+        int[] arrayUnderTest = {1,2,-2147483648};
+        int actual = thirdMaximumNumber.findThirdMax(arrayUnderTest);
+        Assert.assertEquals(-2147483648, actual);
+    }
+
+    @Test
+    public void testThirdMaximumNumberCaseFive() {
+        ThirdMaximumNumber thirdMaximumNumber = new ThirdMaximumNumber();
+        int[] arrayUnderTest = {1,1,2};
+        int actual = thirdMaximumNumber.findThirdMax(arrayUnderTest);
+        Assert.assertEquals(2, actual);
+    }
 }

@@ -1,5 +1,9 @@
 package arrays.easy;
 
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Set;
+
 /**
  * Given integer array nums, return the third maximum number in this array. If the third maximum does not exist, return the maximum number.
  *
@@ -37,31 +41,32 @@ public class ThirdMaximumNumber {
 
     public int findThirdMax(int[] nums) {
 
-        int firstMax = Integer.MIN_VALUE;
-        int secondMax = Integer.MIN_VALUE;
-        int thirdMax = Integer.MIN_VALUE;
+        Set<Integer> set = new HashSet<>();
 
-        for (int i = 0; i < nums.length; i++) {
+        for (int num : nums) {
+            set.add(num);
+        }
 
-            // in case numbers have the same value
-            if (nums[i] == firstMax || nums[i] == secondMax || nums[i] == thirdMax) {
-                continue;
-            }
+        if (set.size() < 3) {
+            return Collections.max(set);
+        }
 
-            if (firstMax == Integer.MIN_VALUE || nums[i] > firstMax) {
-                thirdMax = secondMax;
-                secondMax = firstMax;
-                firstMax = nums[i];
-            } else if (secondMax == Integer.MIN_VALUE || nums[i] > secondMax) {
-                thirdMax = secondMax;
-                secondMax = nums[i];
-            } else if (thirdMax == Integer.MIN_VALUE || nums[i] > thirdMax) {
-                thirdMax = nums[i];
+        int first = Integer.MIN_VALUE;
+        int second = Integer.MIN_VALUE;
+        int third = Integer.MIN_VALUE;
+
+        for (int val : set) {
+            if (val > first) {
+                third = second;
+                second = first;
+                first = val;
+            } else if (val > second) {
+                third = second;
+                second = val;
+            } else if (val > third) {
+                third = val;
             }
         }
-        if (thirdMax == Integer.MIN_VALUE) {
-            return firstMax;
-        }
-        return thirdMax;
+        return third;
     }
 }
