@@ -36,7 +36,7 @@ import java.util.Set;
  * Follow up: Can you find an O(n) solution?
  */
 
-// Time O(N) Space O(1)
+// Time O(N) Space O(N)
 public class ThirdMaximumNumber {
 
     public int findThirdMax(int[] nums) {
