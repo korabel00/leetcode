@@ -42,6 +42,7 @@ package linked_list.easy;
 
 public class MyLinkedList {
 
+    // здесь записана структура ноды
     static class Node {
         int val;
         Node next;
@@ -50,17 +51,23 @@ public class MyLinkedList {
         }
     }
 
-    private Node head;
-    private int size;
+    private Node head; // отслеживаем начало списка
+    private int size; // отслеживаем размер списка
 
     /** Initialize your data structure here. */
-    public MyLinkedList() {
-    }
+    // there is no need for creation an empty constructor because it will be created automatically by default by JVM
+
 
     /** Get the value of the index-th node in the linked list. If the index is invalid, return -1. */
     public int get(int index) {
+        //если индекс некорректный возвращаем -1
         if (index >= size) return -1;
+        if (head == null) {
+            return -1;
+        }
+        // в противном случае идем с начала списка отсчитывая кол-во пройденных нод
         Node curr = head;
+        // i < index потому что head уже содержит 1 ноду
         for (int i = 0; i < index; i++) {
             curr = curr.next;
         }
@@ -69,6 +76,8 @@ public class MyLinkedList {
 
     /** Add a node of value val before the first element of the linked list. After the insertion, the new node will be the first node of the linked list. */
     public void addAtHead(int val) {
+        // Сохраняем текущую ссылку на первую ноду, записываем в head новую первую ноду и в этой новой ноде
+        // ставим ссылку на старый head
         Node prev = head;
         head = new Node(val);
         head.next = prev;
@@ -77,17 +86,27 @@ public class MyLinkedList {
 
     /** Append a node of value val to the last element of the linked list. */
     public void addAtTail(int val) {
-        Node curr = head;
-        while (curr.next != null) {
-            curr = curr.next;
+        // если head пустой то просто присваиваем значение
+        if (head == null) {
+            head = new Node(val);
+        } else {
+            // идем с начала списка и отслеживаем существует ли ссылка на следующую ноду. Если нет -
+            // пишем новую ссылку на новую ноду
+            Node curr = head;
+            while (curr.next != null) {
+                curr = curr.next;
+            }
+            curr.next = new Node(val);
         }
-        curr.next = new Node(val);
         size++;
     }
 
     /** Add a node of value val before the index-th node in the linked list. If index equals to the length of linked list,
      * the node will be appended to the end of linked list. If index is greater than the length, the node will not be inserted. */
     public void addAtIndex(int index, int val) {
+
+        //проверяем пограничные кейсы и если это не они ищем индекс, ставим ссылку в новой ноде на
+        // следующую за текущей а в текущей ссылаемся на новую ноду
         Node curr = head;
         if (index > size) return;
         if (index == 0) addAtHead(val);
