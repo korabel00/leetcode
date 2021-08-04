@@ -1,5 +1,6 @@
 package linked_list.easy;
 
+import linked_list.medium.MyLinkedList;
 import org.junit.Assert;
 import org.junit.Test;
 

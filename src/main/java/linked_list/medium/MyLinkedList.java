@@ -1,4 +1,4 @@
-package linked_list.easy;
+package linked_list.medium;
 
 /**
  * Design your implementation of the linked list. You can choose to use a singly or doubly linked list.
@@ -55,7 +55,8 @@ public class MyLinkedList {
     private int size; // отслеживаем размер списка
 
     /** Initialize your data structure here. */
-    // there is no need for creation an empty constructor because it will be created automatically by default by JVM
+    // There is no need for creation an empty constructor because it will be created automatically
+    // by default by JVM
 
 
     /** Get the value of the index-th node in the linked list. If the index is invalid, return -1. */
