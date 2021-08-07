@@ -54,6 +54,7 @@ public class LinkedListCycle2 {
     //If there is no cycle, the fast pointer will stop at the end of the linked list.
     //If there is a cycle, the fast pointer will eventually meet with the slow pointer.
 
+    // Time O(N) Space O(1)
     public ListNode detectCycle(ListNode head) {
 
         if (head == null || head.next == null) return null;
