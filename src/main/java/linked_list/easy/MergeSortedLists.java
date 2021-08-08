@@ -1,4 +1,4 @@
-package recursion.easy.merge_two_sorted_lists;
+package linked_list.easy;
 
 //Amazon
 //Facebook
