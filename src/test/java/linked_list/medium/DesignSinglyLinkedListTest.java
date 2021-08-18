@@ -1,14 +1,13 @@
 package linked_list.medium;
 
-import linked_list.medium.MyLinkedList;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class MyLinkedListTest {
+public class DesignSinglyLinkedListTest {
 
     @Test
     public void testMyLinkedListCaseOne() {
-        MyLinkedList myLinkedList = new MyLinkedList();
+        DesignSinglyLinkedList myLinkedList = new DesignSinglyLinkedList();
         myLinkedList.addAtHead(1);
         myLinkedList.addAtTail(3);
         myLinkedList.addAtIndex(1, 2);                          // linked list becomes 1->2->3
@@ -19,7 +18,7 @@ public class MyLinkedListTest {
 
     @Test
     public void testMyLinkedListCaseTwo() {
-        MyLinkedList myLinkedList = new MyLinkedList();
+        DesignSinglyLinkedList myLinkedList = new DesignSinglyLinkedList();
         myLinkedList.addAtTail(1);
         Assert.assertEquals(1, myLinkedList.get(0));
     }

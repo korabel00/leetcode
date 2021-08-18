@@ -40,7 +40,7 @@ package linked_list.medium;
  * At most 2000 calls will be made to get, addAtHead, addAtTail, addAtIndex and deleteAtIndex.
  */
 
-public class MyLinkedList {
+public class DesignSinglyLinkedList {
 
     // здесь записана структура ноды
     static class Node {
