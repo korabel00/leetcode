@@ -2,6 +2,7 @@ package linked_list.medium;
 
 import linked_list.easy.ListNode;
 import org.junit.Test;
+import org.testng.Assert;
 
 public class AddTwoNumbersTest {
 
@@ -12,6 +13,10 @@ public class AddTwoNumbersTest {
         ListNode l2 = new ListNode(5, new ListNode(6, new ListNode(4)));
 
         AddTwoNumbers addTwoNumbers = new AddTwoNumbers();
-        addTwoNumbers.addTwoNumbers(l1, l2);
+        ListNode l3 = addTwoNumbers.addTwoNumbers(l1, l2);
+
+        Assert.assertEquals(l3.val, 7);
+        Assert.assertEquals(l3.next.val, 0);
+        Assert.assertEquals(l3.next.next.val, 8);
     }
 }
