@@ -33,18 +33,18 @@ public class BinarySearch {
 
         if (nums == null || nums.length == 0) return -1;
 
-        int low = 0;
-        int high = nums.length - 1;
+        int left = 0;
+        int right = nums.length - 1;
         int mid;
 
         // не используем low != high потому что они могут сойтись на последнем элементе
-        while (low <= high) {
-            mid = low + (high - low) / 2;
+        while (left <= right) {
+            mid = left + (right - left) / 2;
 
             if (target < nums[mid]) {
-                high = mid - 1;
+                right = mid - 1;
             } else if (target > nums[mid]) {
-                low = mid + 1;
+                left = mid + 1;
             } else return mid;
         }
         return -1;
