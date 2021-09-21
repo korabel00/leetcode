@@ -49,6 +49,7 @@ package binary_search;
  * int guess(int num);
  */
 
+//easy
 public class GuessNumberHigherOrLower {
 
     // this is a mock

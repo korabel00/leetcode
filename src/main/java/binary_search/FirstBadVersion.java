@@ -29,6 +29,7 @@ package binary_search;
  * 1 <= bad <= n <= 231 - 1
  */
 
+//easy binary search template 2
 public class FirstBadVersion {
 
 //    public int firstBadVersion(int n) {

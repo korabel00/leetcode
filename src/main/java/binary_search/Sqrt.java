@@ -28,6 +28,7 @@ package binary_search;
  * Use the sorted property of integers to reduced the search space. (Credits: @annujoshi)
  */
 
+//easy
 //Space O(1) Time O(logN)
 public class Sqrt {
 

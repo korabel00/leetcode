@@ -27,6 +27,7 @@ package binary_search;
  * nums is sorted in ascending order.
  */
 
+//easy
 public class BinarySearch {
 
     public int searchIteratively(int[] nums, int target) {
