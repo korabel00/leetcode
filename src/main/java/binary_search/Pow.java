@@ -28,7 +28,7 @@ package binary_search;
  */
 
 //medium
-// Time log(N) Space O(1)
+// Time log(N) Space O(N) - because of recursion
 // 2^10 = 2^5*2^5 = 2^2*2^2*2
 public class Pow {
 
