@@ -1,5 +1,6 @@
 package binary_search;
 
+import java.util.Arrays;
 import java.util.HashSet;
 
 /**
@@ -53,5 +54,41 @@ public class IntersectionOfTwoArrays {
             i++;
         }
         return result;
+    }
+
+    public int[] intersectionByBinarySearch(int[] nums1, int[] nums2) {
+
+        int minLength = Math.min(nums1.length, nums2.length);
+        HashSet<Integer> intersection = new HashSet<>(minLength);
+
+        Arrays.sort(nums1);
+
+        for (int target: nums2) {
+            if (isTargetIsInArray(nums1, target)) {
+                intersection.add(target);
+            }
+        }
+
+        int[] result = new int[intersection.size()];
+        int i = 0;
+        for (Integer integer: intersection) {
+            result[i++] = integer;
+        }
+        return result;
+    }
+
+    private boolean isTargetIsInArray(int[] nums1, int target) {
+
+        int left = 0;
+        int right = nums1.length - 1;
+
+        while (left <= right) {
+            int mid = left + (right - left) / 2;
+
+            if (nums1[mid] == target) return true;
+            else if (nums1[mid] < target) left = mid + 1;
+            else right = mid - 1;
+        }
+        return false;
     }
 }
