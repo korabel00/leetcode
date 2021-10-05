@@ -1,6 +1,7 @@
-package linked_list.medium;
+package linked_list;
 
-import linked_list.easy.ListNode;
+import linked_list.AddTwoNumbers;
+import linked_list.ListNode;
 import org.junit.Test;
 import org.testng.Assert;
 

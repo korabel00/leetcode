@@ -1,4 +1,4 @@
-package linked_list.easy;
+package linked_list;
 
 
 /**
@@ -40,6 +40,7 @@ package linked_list.easy;
  * Follow up: Can you solve it using O(1) (i.e. constant) memory?
  */
 
+// easy
 public class LinkedListCycle {
 
     static class ListNode {

@@ -1,5 +1,6 @@
-package linked_list.medium;
+package linked_list;
 
+import linked_list.DesignSinglyLinkedList;
 import org.junit.Assert;
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package linked_list.medium;
+package linked_list;
 
 /**
  * Given the head of a singly linked list, group all the nodes with odd indices together followed by the nodes with even indices, and return the reordered list.
@@ -30,8 +30,9 @@ package linked_list.medium;
  * -106 <= Node.val <= 106
  */
 
-import linked_list.easy.ListNode;
+import linked_list.ListNode;
 
+//medium
 public class OddEvenLinkedList {
 
     public ListNode oddEvenList(ListNode head) {

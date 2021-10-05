@@ -1,7 +1,7 @@
-package linked_list.easy;
+package linked_list;
 
-import linked_list.easy.ListNode;
-import linked_list.easy.MergeSortedLists;
+import linked_list.ListNode;
+import linked_list.MergeSortedLists;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;

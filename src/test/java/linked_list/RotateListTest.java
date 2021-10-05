@@ -1,6 +1,7 @@
-package linked_list.medium;
+package linked_list;
 
-import linked_list.easy.ListNode;
+import linked_list.ListNode;
+import linked_list.RotateList;
 import org.junit.Assert;
 import org.junit.Test;
 

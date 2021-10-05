@@ -1,4 +1,4 @@
-package linked_list.medium;
+package linked_list;
 
 /**
  * Given a linked list, return the node where the cycle begins. If there is no cycle, return null.
@@ -39,6 +39,7 @@ package linked_list.medium;
  * Follow up: Can you solve it using O(1) (i.e. constant) memory?
  */
 
+//medium
 public class LinkedListCycle2 {
 
     static class ListNode {

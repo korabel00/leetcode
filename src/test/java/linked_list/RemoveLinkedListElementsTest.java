@@ -1,5 +1,7 @@
-package linked_list.easy;
+package linked_list;
 
+import linked_list.ListNode;
+import linked_list.RemoveLinkedListElements;
 import org.junit.Test;
 
 public class RemoveLinkedListElementsTest {

@@ -1,6 +1,6 @@
-package linked_list.medium;
+package linked_list;
 
-import linked_list.easy.ListNode;
+import linked_list.ListNode;
 
 /**
  * You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.
@@ -32,6 +32,7 @@ import linked_list.easy.ListNode;
  * It is guaranteed that the list represents a number that does not have leading zeros.
  */
 
+//medium
 public class AddTwoNumbers {
 
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {

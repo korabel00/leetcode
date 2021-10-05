@@ -64,7 +64,7 @@ public class IntersectionOfTwoArrays {
         Arrays.sort(nums1);
 
         for (int target: nums2) {
-            if (isTargetIsInArray(nums1, target)) {
+            if (isTargetInArray(nums1, target)) {
                 intersection.add(target);
             }
         }
@@ -77,7 +77,7 @@ public class IntersectionOfTwoArrays {
         return result;
     }
 
-    private boolean isTargetIsInArray(int[] nums1, int target) {
+    private boolean isTargetInArray(int[] nums1, int target) {
 
         int left = 0;
         int right = nums1.length - 1;

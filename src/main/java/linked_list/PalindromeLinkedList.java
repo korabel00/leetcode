@@ -1,4 +1,4 @@
-package linked_list.easy;
+package linked_list;
 
 /**
  * Given the head of a singly linked list, return true if it is a palindrome.
@@ -26,6 +26,7 @@ package linked_list.easy;
  * Follow up: Could you do it in O(n) time and O(1) space?
  */
 
+// easy
 public class PalindromeLinkedList {
 
     public boolean isPalindrome(ListNode head) {

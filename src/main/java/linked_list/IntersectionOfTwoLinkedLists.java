@@ -1,4 +1,4 @@
-package linked_list.easy;
+package linked_list;
 
 /**
  * Given the heads of two singly linked-lists headA and headB, return the node at which the two lists intersect. If the two linked lists have no intersection at all, return null.
@@ -61,6 +61,7 @@ package linked_list.easy;
  * Follow up: Could you write a solution that runs in O(n) time and use only O(1) memory?
  */
 
+// easy
 public class IntersectionOfTwoLinkedLists {
 
     static class ListNode {

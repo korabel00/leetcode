@@ -1,9 +1,10 @@
-package linked_list.easy;
+package linked_list;
 
 //Amazon
 //Facebook
 //Microsoft
 //Runtime - O(N + M), Space - O(1)
+// easy
 public class MergeSortedLists {
 
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {

@@ -1,6 +1,6 @@
-package linked_list.medium;
+package linked_list;
 
-import linked_list.easy.ListNode;
+import linked_list.ListNode;
 
 /**
  * Given the head of a linked list, rotate the list to the right by k places.
@@ -26,6 +26,7 @@ import linked_list.easy.ListNode;
  */
 
 // Time O(N) Space O(1)
+//medium
 public class RotateList {
 
     // smarter than brute force

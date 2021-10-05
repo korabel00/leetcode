@@ -1,5 +1,7 @@
-package linked_list.easy;
+package linked_list;
 
+import linked_list.ListNode;
+import linked_list.PalindromeLinkedList;
 import org.junit.Assert;
 import org.junit.Test;
 

@@ -1,6 +1,4 @@
-package linked_list.easy;
-
-import java.sql.Time;
+package linked_list;
 
 /**
  * Given the head of a linked list and an integer val, remove all the nodes of the linked list that has Node.val == val, and return the new head.
@@ -29,6 +27,7 @@ import java.sql.Time;
  * 0 <= val <= 50
  */
 
+// easy
 public class RemoveLinkedListElements {
 
     //Time O(N) Space

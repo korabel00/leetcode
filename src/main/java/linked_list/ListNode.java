@@ -1,4 +1,4 @@
-package linked_list.easy;
+package linked_list;
 
 public class ListNode {
 

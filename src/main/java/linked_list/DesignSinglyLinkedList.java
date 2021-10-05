@@ -1,4 +1,4 @@
-package linked_list.medium;
+package linked_list;
 
 /**
  * Design your implementation of the linked list. You can choose to use a singly or doubly linked list.
@@ -40,6 +40,7 @@ package linked_list.medium;
  * At most 2000 calls will be made to get, addAtHead, addAtTail, addAtIndex and deleteAtIndex.
  */
 
+//medium
 public class DesignSinglyLinkedList {
 
     // здесь записана структура ноды

@@ -1,4 +1,6 @@
-package linked_list.easy;
+package linked_list;
+
+import linked_list.ListNode;
 
 /**
  * Given the head of a singly linked list, reverse the list, and return the reversed list.
@@ -30,6 +32,7 @@ package linked_list.easy;
  * Follow up: A linked list can be reversed either iteratively or recursively. Could you implement both?
  */
 
+// easy
 public class ReverseLinkedList {
 
     public ListNode reverseList(ListNode head) {
