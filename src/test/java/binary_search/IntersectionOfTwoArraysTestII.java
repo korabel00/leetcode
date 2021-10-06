@@ -9,7 +9,7 @@ public class IntersectionOfTwoArraysTestII {
     public void testIntersectionOfTwoArraysIICaseOne() {
 
         IntersectionOfTwoArraysII intersectionOfTwoArraysII = new IntersectionOfTwoArraysII();
-        int[] actual = intersectionOfTwoArraysII.intersect(new int[]{1,2,2,1}, new int[]{2,2});
+        int[] actual = intersectionOfTwoArraysII.intersectByBinarySearch(new int[]{1,2,2,1}, new int[]{2,2});
         Assert.assertArrayEquals(new int[]{2,2}, actual);
     }
 
@@ -17,7 +17,7 @@ public class IntersectionOfTwoArraysTestII {
     public void testIntersectionOfTwoArraysIICaseTwo() {
 
         IntersectionOfTwoArraysII IntersectionOfTwoArraysII = new IntersectionOfTwoArraysII();
-        int[] actual = IntersectionOfTwoArraysII.intersect(new int[]{4,9,5}, new int[]{9,4,9,8,4});
+        int[] actual = IntersectionOfTwoArraysII.intersectByBinarySearch(new int[]{4,9,5}, new int[]{9,4,9,8,4});
         Assert.assertArrayEquals(new int[]{4,9}, actual);
     }
 
@@ -25,7 +25,15 @@ public class IntersectionOfTwoArraysTestII {
     public void testIntersectionOfTwoArraysIICaseThree() {
 
         IntersectionOfTwoArraysII IntersectionOfTwoArraysII = new IntersectionOfTwoArraysII();
-        int[] actual = IntersectionOfTwoArraysII.intersect(new int[]{3,1,2}, new int[]{1,1});
+        int[] actual = IntersectionOfTwoArraysII.intersectByBinarySearch(new int[]{3,1,2}, new int[]{1,1});
         Assert.assertArrayEquals(new int[]{1}, actual);
+    }
+
+    @Test
+    public void testIntersectionOfTwoArraysIICaseFour() {
+
+        IntersectionOfTwoArraysII IntersectionOfTwoArraysII = new IntersectionOfTwoArraysII();
+        int[] actual = IntersectionOfTwoArraysII.intersectByTwoPointers(new int[]{1,2,2,1}, new int[]{2,2});
+        Assert.assertArrayEquals(new int[]{2,2}, actual);
     }
 }
