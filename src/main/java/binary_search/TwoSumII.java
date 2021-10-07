@@ -43,7 +43,6 @@ public class TwoSumII {
 
     public int[] twoSumByHashMap(int[] numbers, int target) {
 
-
         Map<Integer, Integer> map = new HashMap<>();
         int[] result = new int[]{-1, -1};
 
