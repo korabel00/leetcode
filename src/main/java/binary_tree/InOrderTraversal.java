@@ -1,7 +1,10 @@
 package binary_tree;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
- * Given the root of a binary tree, return the preorder traversal of its nodes' values.
+ * Given the root of a binary tree, return the inorder traversal of its nodes' values.
  *
  *
  *
@@ -9,7 +12,7 @@ package binary_tree;
  *
  *
  * Input: root = [1,null,2,3]
- * Output: [1,2,3]
+ * Output: [1,3,2]
  * Example 2:
  *
  * Input: root = []
@@ -22,7 +25,7 @@ package binary_tree;
  *
  *
  * Input: root = [1,2]
- * Output: [1,2]
+ * Output: [2,1]
  * Example 5:
  *
  *
@@ -39,19 +42,17 @@ package binary_tree;
  * Follow up: Recursive solution is trivial, could you do it iteratively?
  */
 
-import java.util.ArrayList;
-import java.util.List;
+public class InOrderTraversal {
 
-public class PreOrderTraversal {
-    public List<Integer> preorderTraversal(TreeNode root) {
+    public List<Integer> inorderTraversal(TreeNode root) {
         List<Integer> result = new ArrayList<>();
         helper(root, result);
         return result;
     }
     private void helper(TreeNode root, List<Integer> result) {
         if (root == null) return;
-        result.add(root.val);
         helper(root.left, result);
+        result.add(root.val);
         helper(root.right, result);
     }
 }
