@@ -55,10 +55,10 @@ public class ConstructBinaryTreeFromInorderAndPostorderTraversal {
         TreeNode root = new TreeNode();
         root.val = postorder[postEnd];
         int rootIndex = map.get(root.val);
-        int leftLengthPost = rootIndex - 1 - inStart;
-        int rightLengthPost = inEnd - (rootIndex + 1);
-        root.left = helper(inorder, inStart, rootIndex - 1, postorder, postStart, postStart + leftLengthPost, map);
-        root.right = helper(inorder, rootIndex + 1, inEnd, postorder, postEnd - rightLengthPost - 1 , postEnd - 1, map);
+        int leftLen = rootIndex - 1 - inStart;
+        int rightLen = inEnd - (rootIndex + 1);
+        root.left = helper(inorder, inStart, rootIndex - 1, postorder, postStart, postStart + leftLen, map);
+        root.right = helper(inorder, rootIndex + 1, inEnd, postorder, postEnd - rightLen - 1 , postEnd - 1, map);
         return root;
     }
 }
