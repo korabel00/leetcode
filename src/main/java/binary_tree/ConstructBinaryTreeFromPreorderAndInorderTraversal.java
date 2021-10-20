@@ -47,7 +47,7 @@ public class ConstructBinaryTreeFromPreorderAndInorderTraversal {
         TreeNode root = new TreeNode(preorder[preStart]);
         int rootIndex = map.get(preorder[preStart]); // Index of current root in inorder
         root.left = helper(preStart + 1, inStart, rootIndex - 1, preorder, inorder, map);
-        root.right = helper(preStart + rootIndex - inStart + 1, rootIndex + 1, inEnd, preorder, inorder, map);
+        root.right = helper(preStart + (rootIndex - inStart) + 1, rootIndex + 1, inEnd, preorder, inorder, map);
         return root;
     }
 }

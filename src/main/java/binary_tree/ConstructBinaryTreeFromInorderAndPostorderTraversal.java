@@ -42,10 +42,10 @@ public class ConstructBinaryTreeFromInorderAndPostorderTraversal {
 
         // Finding this root element in the inorder array so that we can define left subTree and right subTree
         // for the inorder = [9,3,15,20,7] there are going to be two parts 9 and 15,20,7
-        return helper(inorder, 0, inorder.length - 1, postorder, 0,postorder.length - 1, map);
+        return helper(0,postorder.length - 1, 0 ,inorder.length - 1, postorder, inorder, map);
     }
 
-    private TreeNode helper(int[] inorder, int inStart, int inEnd, int[] postorder, int postStart, int postEnd,
+    private TreeNode helper(int postStart, int postEnd, int inStart, int inEnd, int[] postorder, int[] inorder,
                             Map<Integer,Integer> map) {
 
         if (inStart > inEnd || postEnd < 0) return null;
@@ -54,11 +54,10 @@ public class ConstructBinaryTreeFromInorderAndPostorderTraversal {
         // For the postorder = [9,15,7,20,3] it is going to be 3
         TreeNode root = new TreeNode();
         root.val = postorder[postEnd];
-        int rootIndex = map.get(root.val);
-        int leftLen = rootIndex - 1 - inStart;
-        int rightLen = inEnd - (rootIndex + 1);
-        root.left = helper(inorder, inStart, rootIndex - 1, postorder, postStart, postStart + leftLen, map);
-        root.right = helper(inorder, rootIndex + 1, inEnd, postorder, postEnd - rightLen - 1 , postEnd - 1, map);
+        int rootIndex = map.get(postorder[postEnd]);
+
+        root.left = helper(postStart,postStart + (rootIndex - inStart) - 1, inStart, rootIndex - 1, postorder, inorder, map);
+        root.right = helper(postStart + (rootIndex - inStart), postEnd - 1, rootIndex + 1, inEnd, postorder, inorder, map);
         return root;
     }
 }
