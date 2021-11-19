@@ -38,7 +38,8 @@ import java.util.*;
  * At most 104 calls will be made to add, remove, and contains.
  */
 
-// Time
+// Time complexity is from O(1) (in case BUCKETS_LIST_SIZE = MAX_VALUE) to O(N) in case BUCKETS_LIST_SIZE = 1,
+// Space complex behaves the same
 public class MyHashSet {
 
     private static final int MAX_VALUE = 1000000;
