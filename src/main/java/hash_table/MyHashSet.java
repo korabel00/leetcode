@@ -39,11 +39,13 @@ import java.util.*;
  */
 
 // Time complexity is from O(1) (in case BUCKETS_LIST_SIZE = MAX_VALUE) to O(N) in case BUCKETS_LIST_SIZE = 1,
+// For this case O(BUCKETS_LIST_SIZE/MAX_VALUE);
 // Space complexity behaves the same
 public class MyHashSet {
 
     private static final int MAX_VALUE = 1000000;
-    private static final int BUCKETS_LIST_SIZE = 1000;
+    // We use big prime number to shorter possible collisions and makes hashing more efficient when use modulo operator (%)
+    private static final int BUCKETS_LIST_SIZE = 997;
     private List<List<Integer>> bucketsList;
 
     public MyHashSet() {
