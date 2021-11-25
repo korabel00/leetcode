@@ -1,4 +1,4 @@
-package ubs;
+package hash_table;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -28,6 +28,7 @@ import java.util.Set;
  * -109 <= nums[i] <= 109
  */
 
+//Time - O(N) Space - O(N)
 public class ContainsDuplicate {
     public boolean containsDuplicate(int[] nums) {
 
