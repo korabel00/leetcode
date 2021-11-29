@@ -30,6 +30,9 @@ import java.util.Map;
 
 public class FirstUniqueCharacterInAString {
 
+    // 117 ms 47Mb memory
+    // Time = O(N) since we go through the string of length N two times.
+    // Space - O(1) because English alphabet contains 26 letters.
     public int firstUniqChar(String s) {
 
         String[] str = s.split("");
@@ -41,6 +44,24 @@ public class FirstUniqueCharacterInAString {
 
         for (int i = 0; i < s.length(); i++) {
             if (map.get(str[i]) == 1) return i;
+        }
+        return -1;
+    }
+
+    // 21 ms 40Mb memory
+    // Time = O(N) since we go through the string of length N two times.
+    // Space - O(1) because English alphabet contains 26 letters.
+    public int firstUniqChar2(String s) {
+
+        char[] chrArr = s.toCharArray();
+        Map<Character, Integer> map  = new HashMap<>();
+
+        for (char chr: chrArr) {
+            map.put(chr, map.getOrDefault(chr, 0) + 1);
+        }
+
+        for (int i = 0; i < s.length(); i++) {
+            if (map.get(chrArr[i]) == 1) return i;
         }
         return -1;
     }
