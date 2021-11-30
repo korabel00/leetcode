@@ -29,6 +29,8 @@ import java.util.Map;
  * 0 <= k <= 105
  */
 
+// Time = O(N). Search delete and insert in HashMap are performed with constant time complexity
+// Space = O(N)
 public class ContainsDuplicate2 {
 
     public boolean containsNearbyDuplicate(int[] nums, int k) {
