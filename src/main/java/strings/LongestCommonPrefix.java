@@ -1,4 +1,4 @@
-package strings.easy;
+package strings;
 
 //Amazon
 //Time Complexity: O(N + M) Space Complexity: O(1)
