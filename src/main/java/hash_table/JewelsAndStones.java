@@ -30,6 +30,8 @@ import java.util.Set;
  * For each stone, check if it is a jewel.
  */
 
+// Time O(N + M) where N is jewels length and M is stone length
+// Space (N)  where N is jewels length
 public class JewelsAndStones {
 
     public int numJewelsInStones(String jewels, String stones) {
