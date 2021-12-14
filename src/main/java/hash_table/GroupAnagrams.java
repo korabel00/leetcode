@@ -17,7 +17,7 @@ public class GroupAnagrams {
             map.putIfAbsent(key, new ArrayList());
             map.get(key).add(str);
         }
-        return new ArrayList<>(map.values());
+        return new ArrayList(map.values());
     }
 
     // Time = O(MN), M- strs.lenght, N - average lenght if each elem in strs
