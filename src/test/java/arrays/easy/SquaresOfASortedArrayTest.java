@@ -1,5 +1,6 @@
 package arrays.easy;
 
+import arrays.SquaresOfASortedArray;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

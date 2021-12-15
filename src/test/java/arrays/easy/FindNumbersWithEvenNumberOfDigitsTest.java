@@ -1,6 +1,6 @@
 package arrays.easy;
 
-import arrays.easy.FindNumbersWithEvenNumberOfDigits;
+import arrays.FindNumbersWithEvenNumberOfDigits;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

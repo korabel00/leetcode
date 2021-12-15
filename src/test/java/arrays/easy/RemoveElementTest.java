@@ -1,6 +1,6 @@
 package arrays.easy;
 
-import arrays.easy.RemoveElement;
+import arrays.RemoveElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

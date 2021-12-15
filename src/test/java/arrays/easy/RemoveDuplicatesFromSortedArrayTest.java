@@ -1,6 +1,6 @@
 package arrays.easy;
 
-import arrays.easy.RemoveDuplicatesFromSortedArray;
+import arrays.RemoveDuplicatesFromSortedArray;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

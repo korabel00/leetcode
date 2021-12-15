@@ -1,5 +1,6 @@
 package arrays.easy;
 
+import arrays.CheckIfNAndItsDoubleExist;
 import org.junit.Assert;
 import org.junit.Test;
 

@@ -1,5 +1,6 @@
 package arrays.easy;
 
+import arrays.MoveZeroes;
 import org.junit.Assert;
 import org.junit.Test;
 
