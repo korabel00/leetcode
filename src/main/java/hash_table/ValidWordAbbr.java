@@ -35,14 +35,16 @@ class ValidWordAbbr {
     }
 }
 
-// apparently we don't need to store words in set if this set has more than 1 word - it is going to be false anyway
-// that's why it is ok just to put "" instead;
+/*apparently we don't need to store words in set if this set has more than 1 word - it is going to be false anyway
+that's why we just to put "" instead as a sign of false;*/
+
 class ValidWordAbbr2 {
 
     HashMap<String, String> map;
     public ValidWordAbbr2(String[] dictionary) {
 
-        map = new HashMap<String, String>();
+        map = new HashMap<>();
+
         for(String str:dictionary){
             String key = getKey(str);
             // If there is more than one string belong to the same key
@@ -59,7 +61,8 @@ class ValidWordAbbr2 {
     }
 
     public boolean isUnique(String word) {
-        return !map.containsKey(getKey(word))||map.get(getKey(word)).equals(word);
+        String key = getKey(word);
+        return !map.containsKey(key)||map.get(key).equals(word);
     }
 
     String getKey(String str){
