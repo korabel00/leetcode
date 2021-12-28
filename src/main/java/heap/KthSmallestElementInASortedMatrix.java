@@ -38,6 +38,8 @@ import java.util.PriorityQueue;
  * Could you solve the problem in O(n) time complexity? The solution may be too advanced for an interview but you may find reading this paper fun.
  */
 
+// Time = O(N*(NlogN))
+// Space = O(K)
 public class KthSmallestElementInASortedMatrix {
 
     public int kthSmallest(int[][] matrix, int k) {
