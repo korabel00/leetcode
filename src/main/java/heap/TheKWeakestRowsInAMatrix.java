@@ -61,6 +61,9 @@ import java.util.TreeMap;
  * matrix[i][j] is either 0 or 1.
  */
 
+// Time = O(M(logN + 1 + logM) + k) for binary search where M - number of rows and N - number od columns +
+// + 1 for contains + logM for inserting in TreeMap + k for output
+// Space = O(M), where M - number of rows
 public class TheKWeakestRowsInAMatrix {
 
     Map<Integer, List<Integer>> map = new TreeMap<>();
