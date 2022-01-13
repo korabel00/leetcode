@@ -24,15 +24,21 @@ import java.util.PriorityQueue;
  * 0 <= starti < endi <= 106
  */
 
+// Time = O(NlogN for sorting + NlogN for inserting and deleting in heap within loop of N times)
+// Space = O(N)
 public class MeetingRoomsII {
 
     public int minMeetingRooms(int[][] intervals) {
+
+        // edge cases
+        if (intervals == null || intervals.length == 0) return 0;
 
         // Sort the intervals by start time so it goes like this:
         // [2,4], [7,10]
         Arrays.sort(intervals, (a,b) -> (a[0] - b[0]));
 
         // we are going to keep end time here like this: 4, 10
+        // on the top minHeap is going to keep track of the earliest ending meeting
         PriorityQueue<Integer> minHeap =  new PriorityQueue<>();
 
         int minRoom = Integer.MIN_VALUE;
