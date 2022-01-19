@@ -3,16 +3,20 @@ package heap;
 import java.util.Collections;
 import java.util.PriorityQueue;
 
+// Time = O(NlogN - for filling up the heap + N-K for polling + N-K for iterating)
+// Space = O(N)
 public class KClosestPointsToOrigin {
 
     public int[][] kClosest(int[][] points, int k) {
 
         PriorityQueue<HeapNode> maxHeap = new PriorityQueue<>(Collections.reverseOrder());
 
+        // fill the heap
         for (int[] point : points) {
             maxHeap.add(new HeapNode(point));
         }
 
+        // cut the heap size to k moving out max elements by distance
         int heapSize = maxHeap.size();
         while (heapSize > k) {
             maxHeap.poll();
