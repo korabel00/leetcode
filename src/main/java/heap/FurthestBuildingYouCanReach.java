@@ -78,3 +78,6 @@ public class FurthestBuildingYouCanReach {
         return heights.length - 1;
     }
 }
+
+// 5 + 1 = 6;
+//  5, 3
