@@ -45,7 +45,8 @@ public class ShortestUnsortedContinuousSubarray {
 
         int[] sortedNums = nums.clone();
         Arrays.sort(sortedNums);
-        int start = sortedNums.length, end = 0;
+        int start = sortedNums.length;
+        int end = 0;
         for (int i = 0; i < sortedNums.length; i++) {
             if (sortedNums[i] != nums[i]) {
                 start = Math.min(start, i);
