@@ -1,4 +1,4 @@
-package linked_list;
+package fast_slow_pointers;
 
 
 /**
