@@ -52,10 +52,10 @@ public class CountBinarySubstrings {
             }
         }
 
-        int ans = 0;
+        int result = 0;
         for (int i = 1; i <= t; i++) {
-            ans += Math.min(groups[i-1], groups[i]);
+            result += Math.min(groups[i-1], groups[i]);
         }
-        return ans;
+        return result;
     }
 }
