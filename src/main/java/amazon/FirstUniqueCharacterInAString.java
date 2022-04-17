@@ -1,4 +1,4 @@
-package hash_table;
+package amazon;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -62,6 +62,23 @@ public class FirstUniqueCharacterInAString {
 
         for (int i = 0; i < s.length(); i++) {
             if (map.get(chrArr[i]) == 1) return i;
+        }
+        return -1;
+    }
+
+    // 5 ms 40Mb memory
+    // Time = O(N) since we go through the string of length N two times.
+    // Space - O(1) because English alphabet contains 26 letters.
+    public int firstUniqChar3(String s) {
+
+        int[] charArr  = new int[26];
+
+        for (int i = 0; i < s.length(); i++) {
+            charArr[s.charAt(i) - 'a']++;
+        }
+
+        for (int i = 0; i < s.length(); i++) {
+           if (charArr[s.charAt(i) - 'a'] == 1) return i;
         }
         return -1;
     }
