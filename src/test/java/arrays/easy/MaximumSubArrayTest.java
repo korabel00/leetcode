@@ -1,6 +1,6 @@
 package arrays.easy;
 
-import arrays.MaximumSubArray;
+import amazon.MaximumSubArray;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

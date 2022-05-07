@@ -2,7 +2,7 @@ package strings.easy;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import strings.ValidParentheses;
+import amazon.ValidParentheses;
 
 /**
  * Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.

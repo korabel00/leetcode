@@ -1,4 +1,4 @@
-package hash_table;
+package amazon;
 
 import java.util.*;
 

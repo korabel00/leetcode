@@ -1,6 +1,6 @@
 package math.easy;
 
-import math.easy.ReverseInteger;
+import amazon.ReverseInteger;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;

@@ -1,7 +1,6 @@
 package linked_list;
 
-import linked_list.AddTwoNumbers;
-import linked_list.ListNode;
+import amazon.AddTwoNumbers;
 import org.junit.Test;
 import org.testng.Assert;
 

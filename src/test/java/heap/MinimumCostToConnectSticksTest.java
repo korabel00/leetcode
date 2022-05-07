@@ -1,5 +1,6 @@
 package heap;
 
+import amazon.MinimumCostToConnectSticks;
 import org.junit.Assert;
 import org.junit.Test;
 

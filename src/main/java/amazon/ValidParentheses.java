@@ -1,4 +1,4 @@
-package strings;
+package amazon;
 
 import java.util.Stack;
 

@@ -1,6 +1,6 @@
 package arrays.easy;
 
-import arrays.ValidMountainArray;
+import amazon.ValidMountainArray;
 import org.junit.Assert;
 import org.junit.Test;
 

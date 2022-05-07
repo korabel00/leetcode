@@ -1,4 +1,4 @@
-package heap;
+package amazon;
 
 import java.util.Arrays;
 import java.util.PriorityQueue;

@@ -1,9 +1,7 @@
 package linked_list;
 
-import linked_list.RemoveNthNodeFromEndOfList;
+import amazon.RemoveNthNodeFromEndOfList;
 import org.junit.Test;
-
-import static linked_list.RemoveNthNodeFromEndOfList.*;
 
 public class RemoveNthNodeFromEndOfListTest {
 

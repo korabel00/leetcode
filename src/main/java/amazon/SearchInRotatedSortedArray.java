@@ -1,4 +1,4 @@
-package binary_search;
+package amazon;
 
 /**
  * There is an integer array nums sorted in ascending order (with distinct values).

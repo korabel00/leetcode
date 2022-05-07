@@ -1,4 +1,4 @@
-package greedy;
+package amazon;
 
 /**
  * 134. Gas Station

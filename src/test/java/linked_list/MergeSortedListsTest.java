@@ -1,7 +1,6 @@
 package linked_list;
 
-import linked_list.ListNode;
-import linked_list.MergeSortedLists;
+import amazon.MergeSortedLists;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;

@@ -1,6 +1,6 @@
 package math.easy;
 
-import math.easy.PalindromeNumber;
+import amazon.PalindromeNumber;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

@@ -1,6 +1,6 @@
 package binary_search;
 
-import arrays.TwoSumII;
+import amazon.TwoSumII;
 import org.junit.Assert;
 import org.junit.Test;
 

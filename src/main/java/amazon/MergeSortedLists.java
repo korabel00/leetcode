@@ -1,4 +1,6 @@
-package linked_list;
+package amazon;
+
+import linked_list.ListNode;
 
 //Amazon
 //Facebook

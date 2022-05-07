@@ -1,6 +1,6 @@
 package arrays.easy;
 
-import arrays.SearchInsertPosition;
+import amazon.SearchInsertPosition;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

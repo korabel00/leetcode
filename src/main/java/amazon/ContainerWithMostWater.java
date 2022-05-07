@@ -1,4 +1,4 @@
-package arrays;
+package amazon;
 
 // Time = O(N)
 // Space = O(1)

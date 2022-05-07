@@ -2,7 +2,7 @@ package strings.easy;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import strings.ImplementStrStr;
+import amazon.ImplementStrStr;
 
 /**
  * Implement strStr().

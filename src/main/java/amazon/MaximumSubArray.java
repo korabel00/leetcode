@@ -1,4 +1,4 @@
-package arrays;
+package amazon;
 
 /**
  * Given an integer array nums, find the contiguous subarray (containing at least one number) which has the largest sum
@@ -43,7 +43,7 @@ public class MaximumSubArray {
 
         for (int i = 1; i < nums.length; i++) {
             currentSum = Math.max(nums[i], currentSum + nums[i]);
-            if (currentSum > maxSum) maxSum = currentSum; // or maxSum = Math.max(currentSum, maxSum);
+            maxSum = Math.max(currentSum, maxSum);
         }
         return maxSum;
     }

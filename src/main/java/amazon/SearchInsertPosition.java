@@ -1,4 +1,4 @@
-package arrays;
+package amazon;
 
 /**
  * Given a sorted array of distinct integers and a target value, return the index if the target is found.
